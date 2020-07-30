@@ -6,6 +6,7 @@ public class Product {
 	String name;
 	String description;
 	int price;
+	int instock;
 	
 	public int getId() {
 		return id;
@@ -30,6 +31,12 @@ public class Product {
 	}
 	public void setDescription(String description) {
 		this.description = description;
+	}
+	public int getInstock() {
+		return instock;
+	}
+	public void setInstock(int instock) {
+		this.instock = instock;
 	}
 	
 	
