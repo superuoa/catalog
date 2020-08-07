@@ -93,6 +93,7 @@
 </dependencies>
 
 	<build>
+		<finalName>catalog-tasks</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
