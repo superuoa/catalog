@@ -7,7 +7,7 @@ public class Product {
 	String description;
 	int price;
 	int instock;
-	
+	int warranty;
 	public int getId() {
 		return id;
 	}
@@ -37,6 +37,12 @@ public class Product {
 	}
 	public void setInstock(int instock) {
 		this.instock = instock;
+	}
+	public int getWarranty() {
+		return warranty;
+	}
+	public void setWarranty(int warranty) {
+		this.warranty = warranty;
 	}
 	
 	

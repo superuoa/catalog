@@ -19,7 +19,7 @@ public class ProductRowMapper implements RowMapper<Product>  {
 		p.setName(rs.getString("name"));
 		p.setPrice(rs.getInt("price"));
 		p.setInstock(rs.getInt("instock"));
-		
+		p.setWarranty(rs.getInt("warranty"));
 		return p;
 	}
 	
