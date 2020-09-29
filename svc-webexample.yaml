@@ -1,9 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  creationTimestamp: "2020-09-18T11:11:06Z"
   labels:
-    run: catalog
+    app: catalog
     hpecp.hpe.com/hpecp-internal-gateway: "true"
   name: catalog-service
 spec:
