@@ -8,10 +8,10 @@ VOLUME /tmp
 EXPOSE 8080
 
 # Set application's JAR file
-ARG JAR_FILE=target/catalog-tasks.war
+ARG JAR_FILE=target/catalog-tasks.jar
 
 # Add the application's JAR file to the container
-ADD ${JAR_FILE} ROOT.war
+ADD ${JAR_FILE} ROOT.jar
 
 # Run the JAR file
-ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/ROOT.war"]
+ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/ROOT.jar"]
