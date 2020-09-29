@@ -10,6 +10,8 @@ import com.yit.catalog.bean.Product;
 public interface ProductDAO {
 
 	List<Product> getProducts();
+	Product getProductById(int id);
 	
+	int save(Product product);
 	
 }

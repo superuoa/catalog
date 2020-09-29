@@ -45,5 +45,15 @@ public class Product {
 		this.warranty = warranty;
 	}
 	
+	public static Product create(String name, String desc, int price,int warranty) {
+		Product p = new Product();
+        p.setName(name);
+        p.setDescription(desc);
+        p.setPrice(price);
+        p.setWarranty(warranty);
+        
+        return p;
+    }
+	
 	
 }
