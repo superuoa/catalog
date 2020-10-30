@@ -13,5 +13,5 @@ public interface ProductDAO {
 	Product getProductById(int id);
 	
 	int save(Product product);
-	
+	int delete(int id);
 }

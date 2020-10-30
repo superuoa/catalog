@@ -1,13 +1,40 @@
 package com.yit.catalog.bean;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+import com.google.gson.Gson;
+
+
+@Entity
 public class Product {
 
+	@Id
+	@GeneratedValue
 	int id;
 	String name;
 	String description;
 	int price;
 	int instock;
 	int warranty;
+
+	public Product() {
+		super();
+	}
+	
+	
+	public Product(int id, String name, String description, int price, int instock, int warranty) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.description = description;
+		this.price = price;
+		this.instock = instock;
+		this.warranty = warranty;
+	}
+
+
 	public int getId() {
 		return id;
 	}
@@ -55,5 +82,15 @@ public class Product {
         return p;
     }
 	
+	public static Product buildJsonToObject(String json){
+
+		Gson gson = new Gson();
+
+		Product c = gson.fromJson(json, Product.class);
+		
+		
+		return c;
+		
+	}
 	
 }

@@ -59,6 +59,18 @@ public class ProductDAOImpl implements ProductDAO{
 		return mm;
 	}
 
+
+	@Override
+	public int delete(int id) {
+		
+		MapSqlParameterSource param = new MapSqlParameterSource();
+        param.addValue("id",id);
+        
+		int mm = template.update("delete from product where id=:id", param);
+		
+		return mm;
+	}
+
 	
 	
 }
