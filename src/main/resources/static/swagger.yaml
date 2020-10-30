@@ -3,7 +3,7 @@ info:
   description: This page lists all the rest apis for Demo Swagger App.
   version: 1.0-SNAPSHOT
   title: Demo Swagger Rest APIs
-host: 'localhost:8080'
+host: 'products-staging-apicast-ball-3scale.apps-bastion.apps.marvel.yipintsoigroup.com:443'
 basePath: /
 tags:
   - name: catalog-controller
@@ -26,6 +26,11 @@ paths:
           required: true
           type: integer
           format: int32
+        - name: "user_key"
+          in: "query"
+          type: string
+          x-data-threescale-name: "user_keys"
+          required: true
       responses:
         '200':
           description: OK
@@ -47,6 +52,12 @@ paths:
         - application/json
       produces:
         - '*/*'
+      parameters:
+        - name: "user_key"
+          in: "query"
+          type: string
+          x-data-threescale-name: "user_keys"
+          required: true
       responses:
         '200':
           description: OK
@@ -77,6 +88,11 @@ paths:
           required: true
           type: integer
           format: int32
+        - name: "user_key"
+          in: "query"
+          type: string
+          x-data-threescale-name: "user_keys"
+          required: true
       responses:
         '200':
           description: OK
@@ -99,6 +115,11 @@ paths:
       produces:
         - '*/*'
       parameters:
+        - name: "user_key"
+          in: "query"
+          type: string
+          x-data-threescale-name: "user_keys"
+          required: true
         - in: body
           name: json
           description: json
