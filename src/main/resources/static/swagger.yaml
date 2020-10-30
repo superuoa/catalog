@@ -8,6 +8,8 @@ basePath: /
 tags:
   - name: catalog-controller
     description: Catalog Controller
+schemes:
+  - https
 paths:
   '/delete/{id}':
     delete:
