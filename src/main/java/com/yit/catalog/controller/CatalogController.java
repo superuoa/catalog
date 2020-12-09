@@ -5,6 +5,8 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,6 +21,7 @@ import com.yit.catalog.repository.ProductDAO;
 @RestController
 public class CatalogController {
 
+	Logger logger = LoggerFactory.getLogger(CatalogController.class);
 	
 	@Resource
     private ProductDAO productDao;
@@ -26,6 +29,14 @@ public class CatalogController {
 	@GetMapping("/getProduct")
     public List<Product> catalog() {
        
+		logger.trace("A TRACE Message");
+        logger.debug("A DEBUG Message");
+        logger.info("An INFO Message");
+        logger.warn("A WARN Message");
+        logger.error("An ERROR Message");
+        
+        System.out.println("A System out Message");
+        
         List<Product> list = productDao.getProducts();
 
 		return list ;
