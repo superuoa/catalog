@@ -26,6 +26,21 @@ public class CatalogController {
 	@Resource
     private ProductDAO productDao;
 	
+	@GetMapping("/dd")
+    public String getDD() {
+       
+		logger.trace("A TRACE Message");
+        logger.debug("A DEBUG Message");
+        logger.info("An INFO Message");
+        logger.warn("A WARN Message");
+        logger.error("An ERROR Message");
+        
+        System.out.println("A System out Message");
+        
+		return "Update 2";
+
+    }
+	
 	@GetMapping("/getProduct")
     public List<Product> catalog() {
        
