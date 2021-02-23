@@ -37,7 +37,7 @@ public class CatalogController {
         
         System.out.println("A System out Message");
         
-		return "Update 2";
+		return "Update 3";
 
     }
 	
