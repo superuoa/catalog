@@ -1,17 +1,9 @@
 # Use official base image of Java Runtim
-FROM openjdk:8-jdk-alpine
+FROM registry.access.redhat.com/ubi8/openjdk-8
 
-# Set volume point to /tmp
-VOLUME /tmp
+ADD ROOT.jar ROOT.jar
 
-# Make port 8080 available to the world outside container
 EXPOSE 8080
-
-# Set application's JAR file
-ARG JAR_FILE=target/catalog-tasks.jar
-
-# Add the application's JAR file to the container
-ADD ${JAR_FILE} ROOT.jar
 
 # Run the JAR file
 ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/ROOT.jar"]
