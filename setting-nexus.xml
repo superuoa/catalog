@@ -13,7 +13,7 @@
     <server>
       <id>nexus</id>
       <username>admin</username>
-      <password>Ibank1234#</password>
+      <password>admin123</password>
     </server>
   </servers>
 </settings>
