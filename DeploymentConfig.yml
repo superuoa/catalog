@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: catalog
-        image: nexus.dcocp.ibank.com/catalog:{{TAG_IMAGE}}
+        image: nnexus.momay.yipintsoigroup.com/catalog:{{TAG_IMAGE}}
         ports:
         - containerPort: 8080
       imagePullSecrets:

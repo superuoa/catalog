@@ -48,11 +48,11 @@
      <distributionManagement>
         <repository>
             <id>nexus</id>
-            <url>http://nexus.dcocp.ibank.com:8081/repository/maven-releases/</url>
+            <url>http://nexus.momay.yipintsoigroup.com:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>nexus</id>
-            <url>http://nexus.dcocp.ibank.com:8081/repository/maven-snapshots/</url>
+            <url>http://nexus.momay.yipintsoigroup.com:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -132,16 +132,17 @@
 	</dependency>
 
 	<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger2</artifactId>
-			<version>2.4.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger-ui</artifactId>
-			<version>2.4.0</version>
-		</dependency>
+		<groupId>io.springfox</groupId>
+		<artifactId>springfox-swagger2</artifactId>
+		<version>2.8.0</version>
+		<scope>compile</scope>
+	</dependency>
+	<dependency>
+		<groupId>io.springfox</groupId>
+		<artifactId>springfox-swagger-ui</artifactId>
+		<version>2.8.0</version>
+		<scope>compile</scope>
+	</dependency>
 	
 </dependencies>
 
