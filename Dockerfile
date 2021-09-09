@@ -1,5 +1,5 @@
 # Use official base image of Java Runtim
-FROM registry.access.redhat.com/ubi8/openjdk-8
+FROM openjdk:8-jdk-alpine
 
 ADD ROOT.jar ROOT.jar
 
