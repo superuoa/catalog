@@ -60,7 +60,7 @@ public class WelcomeController {
 		return list;
 	}
 	
-	@RequestMapping( value = "/getProduct/{id}", method = RequestMethod.GET)
+	@RequestMapping( value = "/getProductById/{id}", method = RequestMethod.GET)
     public Product getById(@PathVariable int id) {
 		Product p = new Product();
 		p.setId(1);
