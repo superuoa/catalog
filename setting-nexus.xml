@@ -5,7 +5,7 @@
       <id>nexus</id>
       <name>Nexus Public Mirror</name>
 <!--       <url>http://nexus3-mics-tools.cloudapps.inet.local/repository/maven-public/</url> -->
-      <url>http://nexus.momay.yipintsoigroup.com:8081/repository/maven-public/</url>
+      <url>http://nexus.esc.yipintsoigroup.com:8081/repository/maven-public/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
@@ -13,7 +13,7 @@
     <server>
       <id>nexus</id>
       <username>admin</username>
-      <password>admin123</password>
+      <password>P@ssw0rd</password>
     </server>
   </servers>
 </settings>
